@@ -20,14 +20,14 @@ A Function Execution Context is created whenever a function is called. Each func
 
 ### What Happens During the Creation Phase and Execution Phase?
 
-Creation Phase:
+### Creation Phase:
 
 * Memory is allocated for variables and functions.
 * Variables declared with var are initialized with undefined.
 * Function declarations are stored in memory.
 * The scope chain is created.
 
-Execution Phase:
+### Execution Phase:
 
 * JavaScript executes code line by line.
 * Variables receive their actual values.
@@ -59,6 +59,7 @@ JavaScript is called single-threaded because it executes one task at a time usin
 `setTimeout()` executes a function once after a specified delay.
 
 Example:
+```javascript
 setTimeout(() => {
    console.log("Hello");
 }, 3000);
