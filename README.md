@@ -22,17 +22,17 @@ A Function Execution Context is created whenever a function is called. Each func
 
 Creation Phase:
 
--Memory is allocated for variables and functions.
--Variables declared with var are initialized with undefined.
--Function declarations are stored in memory.
--The scope chain is created.
+* Memory is allocated for variables and functions.
+* Variables declared with var are initialized with undefined.
+* Function declarations are stored in memory.
+* The scope chain is created.
 
 Execution Phase:
 
--JavaScript executes code line by line.
--Variables receive their actual values.
--Functions are called and executed.
--Expressions and statements are evaluated.
+* JavaScript executes code line by line.
+* Variables receive their actual values.
+* Functions are called and executed.
+* Expressions and statements are evaluated.
 ## 2. Event Loop
 
 ### What is the JavaScript Event Loop?
