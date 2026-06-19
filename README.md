@@ -63,16 +63,18 @@ Example:
 setTimeout(() => {
    console.log("Hello");
 }, 3000);
+```
 
 ### What is setInterval()?
 
 `setInterval()` repeatedly executes a function after a specified interval.
 
 Example:
+```javascript
 setInterval(() => {
   console.log("Running...");
 }, 1000);
-
+```
 ### Difference Between setTimeout() and setInterval()
 
 | setTimeout()        | setInterval()           |
@@ -81,18 +83,18 @@ setInterval(() => {
 | Stops automatically | Continues until cleared |
 
 ### Program to Print "Hello World" After 3 Seconds
-
+```javascript
 setTimeout(() => {
   console.log("Hello World");
 }, 3000);
-
+```
 ### Digital Clock Using setInterval()
-
+```javascript
 setInterval(() => {
   const now = new Date();
   console.log(now.toLocaleTimeString());
 }, 1000);
-
+```
 ## 4. Callback Functions
 
 ### What is a Callback Function?
@@ -105,7 +107,7 @@ A callback function is a function passed as an argument to another function and 
 * To make code more flexible and reusable.
 
 ### Example
-
+```javascript
 function greet(name) {
   console.log("Hello " + name);
 }
@@ -115,7 +117,7 @@ function processUser(callback) {
 }
 
 processUser(greet);
-
+```
 
 ## 5. Promise
 
@@ -139,15 +141,15 @@ A Promise is an object that represents the eventual completion or failure of an 
 -The operation failed.
 
 ### Promise That Resolves After 2 Seconds
-
+```javascript
 const myPromise = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("Promise Resolved");
   }, 2000);
 });
-
+```
 ### Handling Success and Error
-
+```javascript
 myPromise
   .then((result) => {
     console.log(result);
@@ -155,7 +157,7 @@ myPromise
   .catch((error) => {
     console.log(error);
   });
-
+```
 ## 6. Async/Await
 
 ### What is async?
@@ -175,7 +177,7 @@ The `await` keyword pauses execution until a Promise is resolved.
 ### Converting a Promise-Based Example to Async/Await
 
 **Promise Version**
-
+```javascript
 function getData() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -187,9 +189,9 @@ function getData() {
 getData().then((data) => {
   console.log(data);
 });
-
+```
 **Async/Await Version**
-
+```javascript
 function getData() {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -204,3 +206,4 @@ async function fetchData() {
 }
 
 fetchData();
+```
